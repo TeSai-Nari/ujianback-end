@@ -78,7 +78,7 @@ module.exports = {
                         })
                     })
                 } catch (error) {
-                    
+                    return res.status(500).send(error)            
                 }
             }else{
                 return res.status(500).send({message:'id tidak ditemukan'})
